@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+
+}
+
+#main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+
+#back{
+    width: 100%;
+    height: auto;
+    
+    /* background-color: rgb(0, 0, 0); */
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+     
+    object-fit: cover;
+}
+
+#top{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    /* background-color: rgb(0, 0, 0); */
+    
+    pointer-events: none;
+}
+
+#workingArea{
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* border:  1px solid red; */
+    margin: 0 auto;
+    position: relative;
+
+
+}
+
+#nav{
+    margin-top: 30px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:gray; */
+    overflow: hidden;
+    
+}
+#navleft{
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+}
+
+#navleft img{
+    height: 40px;
+    rotate: -15deg;
+    
+   
+    
+}
+
+#navleft a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-left:40px ;
+    
+
+}
+#navright{
+    display: flex;
+    align-items: center;
+    pointer-events: all;
+
+}
+#navright a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-right: 40px;
+}
+
+#hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0% , -50%);
+
+}
+
+#heroleft{
+    min-width: 50%;
+    /* overflow: hidden; */
+
+       
+}
+
+#heroleft .elem{
+    height: 6vw;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+
+
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroleft .elem h1{
+
+    position: absolute;
+    top:100%;
+    left: 0%;
+    text-transform: uppercase;
+    font-size: 5vw;
+    letter-spacing: 2px;
+
+}
+#heroleft button{
+    margin-top:1.5vw;
+    width: 11vw;
+    height: 50px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.3vw;
+    cursor: pointer;
+    background-color: rgb(255, 132, 0);
+    color: #fff;
+    border: none;
+    pointer-events: all;
+
+}
+
+
+#heroright{
+   /* background-color: #350d0d; */
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+    /* height: 100px; */
+    width: 25%;
+}
+#heroright #smallpic{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:0%;
+    /* background-color: #a38888; */
+    
+}
+
+#heroright > p{
+    padding-top: 1.5vw;
+    text-align: justify;
+}
+#heroright :nth-child(3){
+    padding-top: 3vw;
+
+}
+
+#heroright #smallpic p{
+    color:#fff;
+    font-size: 7vw;
+    
+}
